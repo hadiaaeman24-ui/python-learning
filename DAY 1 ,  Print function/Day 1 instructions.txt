@@ -1,0 +1,6 @@
+print 
+makes the computer talk when you will run your code so what will display or print on your screen
+print("Hello world");
+so on your screen when you will run code it will show
+Hello world:
+

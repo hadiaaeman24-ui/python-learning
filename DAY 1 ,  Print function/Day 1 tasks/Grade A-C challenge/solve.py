@@ -1,0 +1,5 @@
+print("Once upon a time...")
+print("There was a small cat.")
+print("The cat loved to learn Python.")
+print("Every day it wrote new code.")
+print("And the cat was happy.")
