@@ -4,3 +4,6 @@ print("Hello world");
 so on your screen when you will run code it will show
 Hello world:
 
+
+credit: I used deepsekk for help to made instructions
+

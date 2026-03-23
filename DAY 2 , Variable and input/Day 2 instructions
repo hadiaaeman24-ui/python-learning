@@ -1,0 +1,30 @@
+variable and input
+what is variable
+variable is like imagine a box that you want  something  to store in it
+example "namn" : "Ali";
+so the box lable is "namn" and in box stored value is "Ali" 
+box is like memory in computer space.
+
+what is input?
+input() lets user type something
+example input(" what is your name?")
+the computer displays what is your name? and wait for user to type to some information what user wrote computer need to save in variable 
+so the correct code will be 
+name = input(" what is your name?") so we can store our value
+
+and if something is stored in variable you can use it later 
+example 
+name = input("What is your name? ")
+print("Hello " + name)
+example in inpuut when computer asked you "what is your name" and you wrote Ella so at last it will print Hello Ella.
+the + put text together 
+"hello" + "world " = hello world
+
+which type of data input store
+it calls String (text)
+you can check what type is it 
+Example
+age = input("How old are you? ") if user type 15 it will be " 15" string not number 15
+print(type(age))# shows <class 'str'> means datatype is string
+we will learn string and how to convert input data later.
+check the task and try to solve them yourself first.

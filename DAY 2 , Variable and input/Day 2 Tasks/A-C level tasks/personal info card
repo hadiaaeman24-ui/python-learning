@@ -1,0 +1,22 @@
+Personal info card
+Asks for your name (save in variable)
+Asks for your age (save in variable)
+Asks for your favorite color (save in variable)
+Prints everything in one sentence
+example:What is your name? Maya
+How old are you? 12
+What is your favorite color? purple
+Maya is 12 years old and loves purple.
+so do it first if you want more challenge so here it is 
+
+Asks for first name
+Asks for last name
+Prints full name
+example What is your first name? John
+What is your last name? Smith
+Your full name is John Smith.
+hint you can add variable together 
+full_name = first_name + " " + last_name
+try them 
+
+
