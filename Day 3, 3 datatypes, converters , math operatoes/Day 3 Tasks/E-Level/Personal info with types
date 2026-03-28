@@ -1,0 +1,14 @@
+Make a program that:
+Asks for name (text – stays as string)
+Asks for age (convert to int)
+Asks for height in meters (convert to float)
+Prints everything and show
+
+example
+ What is your name? Emma
+How old are you? 14
+How tall are you in meters? 1.65
+print all
+ Emma 
+ 14 
+ 1.65 

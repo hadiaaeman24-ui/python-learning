@@ -1,0 +1,25 @@
+Asks for price of an item (convert to float)
+Asks for quantity (convert to int)
+Calculates total price
+Prints: Total: X price
+Example 
+Price of item: 49.90
+How many do you want? 3
+Total: 149.70 kr
+
+formula you can use 
+Formula: total = price * quantity
+
+
+if you finised early Advance challenge 
+Make a program that:
+Asks for your name
+Asks for your age (as number)
+Calculates how old you will be in 10 years
+Prints: Hello [name], in 10 years you will be [age+10] years old
+
+Example 
+What is your name? Sofia
+How old are you? 12
+Hello Sofia, in 10 years you will be 22 years old
+

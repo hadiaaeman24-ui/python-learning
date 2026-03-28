@@ -1,0 +1,106 @@
+today goal is to learn 3 diffrent basic datatypes to know diffrence between
+number and string and to learn mathemtic operatoes and how to covert data type 
+
+so this first one is 
+string what is it its text and the type is str and here is some example 
+"noor" "123" we can write string in "" or """ """ or '' depends on situation 
+the second is Integer its whole number and moslty its written like int 
+examples 
+1 2 3 -3 0
+third basic datatype is float it decimal number and type is float 
+example 
+1.2 or 1.2345 
+
+How to check which type som data have 
+we can use type() function
+examples
+Name = "amina"
+print(type(Name)) 
+answer will be= str
+Age = 13
+print(type(age))
+answer will be = int
+Marks= 10.6
+print(type(Marks))
+answer will be = float
+
+IMPPORTANT 
+input() always use string 
+example 
+age = input("How old are you? ")
+# User types: 15
+print(type(age)) the type will be str not int 
+if you even type number in input() python will see it as "15" not 15 
+
+why its matter ?
+if you need to do math so you cannot plus number + str
+example 
+age = input("How old? ")  # User types 15
+next_year = age + 1        # ERROR! Cannot add text and number
+
+ so because of that we use converting method 
+we can convert 
+example number to string 
+string to number 
+depends on situtation 
+
+its chaning from one type to another 
+here are two method how you can convert
+# Convert string to integer
+age_text = input("How old? ")   # "15"
+age_number = int(age_text)  we used int()   to convert to integer  # 15
+
+# Now you can do math
+next_year = age_number + 1       # 16
+
+the shorter way to convert input is 
+age = int(input("How old are you? ")) 
+
+you can convert int to float. float to int. int to str etc. depends on situation
+so you use
+int() # to convert into integer
+float() # to covert into float
+str() #to convert into str
+
+example 
+# String to integer
+int("15")      # 15
+int("3.14")    # ERROR! Cannot convert decimal text to int
+
+# String to float
+float("3.14")  # 3.14
+float("5")     # 5.0
+
+# Number to string
+str(15)        # "15"
+str(3.14)      # "3.14"
+
+
+once you have int and float values you can use mathematic operatoers 
++  use for addition  5+6= 11
+- use for subtraction   6-5 = 1
+* use for Multiplication  6*5 = 30
+/ use for division  15 / 3 = 5.0  # return value in float form
+// use for Integer division 15 // 2 = 7  # that will return value to int() form
+% remainder (modulo) 15 % 2 = 1
+
+
+
+# rember 
+
+When printing a string in Python, you cannot directly add variables that contain int or float values to a string. You must either:
+Convert the number to a string using str()
+or
+Use an f-string (f"...") to include variables easily.
+Examples:
+# Using str()
+print("Total: " + str(total) + " kr")
+# Using f-string (recommended)
+print(f"Total: {total} kr") # so use can add your variables into string use f"..." and with variables name {}.
+
+
+Do tasks
+
+
+
+

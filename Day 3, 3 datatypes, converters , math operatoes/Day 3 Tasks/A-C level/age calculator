@@ -1,0 +1,10 @@
+Make a program that:
+Asks for your birth year
+Asks for current year
+Calculates how old you are
+Prints: You are X years old
+Example 
+What year were you born? 2010
+What year is it now? 2026
+You are 16 years old
+
