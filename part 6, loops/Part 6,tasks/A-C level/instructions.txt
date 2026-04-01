@@ -1,0 +1,36 @@
+Guessing game with hints
+Sets a secret number
+Keeps asking until correct
+Gives hints: "Too high!" or "Too low!"
+Tells how many tries it took
+
+Guess the number: 5
+Too low! Try again.
+Guess the number: 8
+Too high! Try again.
+Guess the number: 7
+Correct! You got it in 3 tries!
+
+
+
+ Play again system
+ Take your Lesson 5 game and add "play again" functionality:
+Put your entire game inside a loop
+After game ends, ask "Play again? (yes/no)"
+If yes, play again
+If no, exit
+Example:
+text
+You are in a dark room...
+[game plays]
+Play again? (yes/no): yes
+You are in a dark room...
+[game plays again]
+Play again? (yes/no): no
+Thanks for playing!
+
+
+
+
+
+

@@ -1,0 +1,84 @@
+What is if statement? 
+if lets your program make decisions. It asks: "Is this true?" If yes that do something. If no then skip it.
+if condition:
+    # do this if condition is True
+Think of this 
+If it's raining → take umbrella
+If user says "yes" → do something
+If age is 18 or more → allow entry
+
+COMPARISON OPERATORS # in condition you can use them
+1. == , equal to 
+example 
+age == 18             # if age is exaclty 18
+
+if age== 18: 
+      print(hello);
+
+2. != , Not equal to 
+example 
+NAME != Ali   #" name is not equal to ali do something
+
+3. > 
+greater than 
+age > 18   # if age is gretaer than 18 do something
+
+4. < less than
+age < 18 #if age is less than 18 do something
+
+5. >=
+greatar than or equal to 
+age >= 18 #if age greater than or equal to 18 do somrthing
+
+6. <= less than equal to 
+age <= 18   # if age is less than or equal to do something
+
+Important: == compares. = assigns. Don't mix them!
+# CORRECT - comparing
+if age == 18:
+    print("You are 18")
+
+# WRONG - assigning
+if age = 18:   # ERROR!
+    print("You are 18")
+
+the structure of if 
+Colon : after the condition
+Indentation (4 spaces or tab) for the code inside
+Everything indented belongs to the if
+
+we use also else 
+what to do when condition is False
+Example: 
+age = int(input("what is your age?"))
+if age >= 18:
+    print("you are 18")      
+else:
+    print("you are under 18")
+
+if you typed your age is 6 so the if statement will be false you are not greater than or equal to 18 so it will do whatever is written in else.
+
+third thing is elif. What you will do if you have to check many conditions like if age is 6. so you should go to playground. if age is 10 do something if you are 18 learn driving.
+example
+i want to check if age is = 6 so want to go to playground if i am 10 i want to go to school if i am 18 so i want to go to learn driving 
+
+if age == 6:
+    print(" I want to go to playground")
+elif age == 10: 
+    print("I want to go to school")
+elif age == 18:
+    print("I want to learn driving)
+else: 
+    print("No match.")
+
+
+#rember you cannot compare string to number¨
+age = input("Age: ")  # This is string
+if age >= 18:         # ERROR! Can't compare string and number
+    print("ok")
+# FIX:
+age = int(input("Age: "))
+if age >= 18:
+    print("ok")
+
+    

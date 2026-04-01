@@ -1,0 +1,10 @@
+ My inventory
+ Creates an empty list called inventory
+Asks user to add 3 items (one at a time)
+Uses append() to add each item
+Prints the final inventory
+Add item 1: sword
+Add item 2: shield
+Add item 3: potion
+Your inventory: ['sword', 'shield', 'potion']
+

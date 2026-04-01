@@ -1,0 +1,39 @@
+why loops? 
+Without loops, your program runs once and stops:
+1. while loop 
+while LOOP – Repeat as long as something is true
+while condition:
+    # code here repeats while condition is True
+    example 
+count = 1
+while count <= 3:
+    print("This is loop number", count)
+    count = count + 1  #in this case you must do count +1 or this will never end
+     beause the one will never be 2 so it ws be less than 3 
+output
+This is loop number 1
+This is loop number 2
+This is loop number 3
+. INFINITE LOOP (and how to stop it)
+while True:   # This runs forever!
+    print("This never stops!")
+To stop an infinite loop, press Ctrl + C on keyboard.
+But we can use break to stop:
+while True:
+    answer = input("Type 'quit' to stop: ")
+    if answer == "quit":
+        break   # This stops the loop
+    print("You typed:", answer)
+
+break – Stop the loop immediately
+while condition:
+    # do something
+    if something_happens:
+        break   # jumps out of the loop
+
+while True:
+    password = input("Enter password: ")
+    if password == "python123":
+        print("Access granted!")
+        break
+    print("Wrong password. Try again.")

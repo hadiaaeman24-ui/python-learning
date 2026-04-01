@@ -1,0 +1,13 @@
+Simple choice game
+Shows the player a situation
+Gives 2 choices
+Reacts differently based on what they choose
+example
+You are in a dark room. There is a door and a window.
+What do you do?
+1. Open the door
+2. Look out the window
+Your choice: 1
+You open the door. A friendly cat greets you! You win!
+your choice = 2
+You saw a ghost and you are injured.

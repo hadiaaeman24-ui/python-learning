@@ -1,0 +1,44 @@
+Three-choice adventure
+Make a game that:
+Describes a situation
+Gives 3 different choices
+Each choice leads to a different outcome
+Use elif to handle all choices
+example
+A treasure hunt
+What do you do?
+1. Open the chest
+2. Leave it alone
+3. Kick it
+Your choice: 1
+You open the chest! Inside is gold and jewels. You are rich!
+Your choice: 2
+You are poor
+Your choice: 3
+You fell down
+
+
+Two-step adventure
+First choice leads to a second situation
+Second choice leads to final outcome
+Use nested if (if inside if)
+You are in a forest. You see a path and a river.
+Which way? (path/river): path
+You follow the path. You see a cave and a tree.
+Enter cave or climb tree? (cave/tree): cave
+You enter the cave. You find a sleeping bear! You run away!
+
+exampel 
+choice1 = input("First choice: ")
+if choice1 == "path":
+    choice2 = input("Second choice: ")
+    if choice2 == "cave":
+        print("Cave ending")
+    elif choice2 == "tree":
+        print("Tree ending")
+elif choice1 == "river":
+    choice2 = input("Other choices: ")
+    # etc...
+
+
+

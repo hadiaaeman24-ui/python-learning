@@ -1,0 +1,19 @@
+if you have to check diffrent "if" in same codition you can check 
+that calls nested if 
+example: 
+if choice == "open door":
+    print("You open the door...")
+    second_choice = input("Go left or right? ")
+    
+    if second_choice == "left":
+        print("You find treasure!")
+    elif second_choice == "right":
+        print("You find a monster!")
+    else:
+        print("You stand still...")
+
+and opeator 
+if you have to conditions if both are write so do something
+if age > 18 and age < 30 :
+    print("You are adult)
+

@@ -1,0 +1,11 @@
+Number guesser (repeat until correct)
+Make a program that:
+Sets a secret number (you pick, like secret = 7)
+Keeps asking the user to guess until they get it right
+Tells them when they are correct
+Guess the number: 5
+Wrong! Try again.
+Guess the number: 10
+Wrong! Try again.
+Guess the number: 7
+Correct! You win!

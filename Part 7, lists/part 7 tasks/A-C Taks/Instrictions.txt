@@ -1,0 +1,38 @@
+Show inventory with numbers
+Creates inventory with 3 starting items
+Shows each item 
+Asks user which item they want to use
+Removes that item
+Your inventory:
+ key
+ map
+ torch
+
+Which item do you want to use? (1-3): 2
+You used the map!
+Your inventory:
+1. key
+2. torch
+
+Requirements:
+Use pop(index) to remove item (remember index starts at 0!)
+Convert user input to int
+Subtract 1 from choice to get index
+
+
+
+
+Escape room with inventory
+Player starts with empty inventory
+Room has a table and a door
+If player looks at table, they find a key and add to inventory
+If player tries door without key → locked
+If player tries door with key → escape
+You are in a room. There is a table and a locked door.
+What do you do? (table/door): table
+You look under the table and find a KEY!
+You add it to your inventory.
+Inventory: ['key']
+you escaped
+
+

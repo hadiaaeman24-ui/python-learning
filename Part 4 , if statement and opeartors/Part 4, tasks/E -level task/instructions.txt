@@ -1,0 +1,6 @@
+Check age
+Make a program that:
+Asks for your age
+Converts to integer
+If age is 18 or more → print "You can vote"
+Else → print "You are too young to vote"

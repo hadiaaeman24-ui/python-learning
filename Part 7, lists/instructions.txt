@@ -1,0 +1,67 @@
+Learn how to store multiple items in one variable, like an inventory, a list of rooms, or multiple choices
+WHAT IS A LIST?
+A list is a container that holds multiple things in order.
+inventory = ["key", "map", "torch"] # it store differnt things in one variable
+list start counting from 0 not to 1 index 0 
+
+ CREATING LISTS
+ # Empty list
+inventory = []
+# List with items
+inventory = ["key", "map", "torch"]
+# List with different types (can mix!)
+mixed = ["key", 5, True, 3.14]
+# List of numbers
+scores = [10, 20, 30, 40]
+
+ACCESSING ITEMS IN A LIST
+Use index (position) inside [ ]:
+inventory = ["key", "map", "torch"]
+print(inventory[0])  # "key"
+print(inventory[1])  # "map"
+print(inventory[2])  # "torch"
+Negative indexes (count from end):
+print(inventory[-1])  # "torch" (last item)
+print(inventory[-2])  # "map" (second last)
+
+list methods 
+.append   ADDING TO A LIST
+inventory = ["key"]
+# Add one item at the end
+inventory.append("map")
+# inventory = ["key", "map"]
+# Add multiple items
+inventory.append("torch")
+inventory.append("potion")
+# inventory = ["key", "map", "torch", "potion"]
+
+.remove
+.pop
+inventory = ["key", "map", "torch"]
+# Remove by value
+inventory.remove("map")
+# inventory = ["key", "torch"]
+# Remove by index (pop)
+item = inventory.pop(0)  # removes index 0 ("key")
+print(item)  # "key"
+# inventory = ["torch"]
+
+CHECKING IF SOMETHING IS IN A LIST
+inventory = ["key", "map", "torch"]
+if "key" in inventory:
+    print("You have the key!")
+else:
+    print("You don't have the key")
+
+LOOPING THROUGH A LIST
+inventory = ["key", "map", "torch"]
+for item in inventory:
+    print("You have:", item) #it will apply on each item
+
+ LIST LENGTH
+ inventory = ["key", "map", "torch"]
+count = len(inventory)
+print(count)  # 3
+
+
+
