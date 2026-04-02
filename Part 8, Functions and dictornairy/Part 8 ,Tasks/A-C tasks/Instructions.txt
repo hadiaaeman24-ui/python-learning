@@ -1,0 +1,27 @@
+Character dictionary
+Creates a dictionary called player with:
+"name" (string)
+"health" (integer, start at 100)
+"inventory" (list, start empty)
+Prints the player info
+Add function show_player() that prints all player info nicely
+example
+Name: Leo
+Health: 100
+Inventory: []
+
+Room dictionary + movement
+Make a simple game with:
+Create 2 rooms as dictionaries (e.g., "kitchen" and "garden")
+Each room has: "description" and "items" list
+Player starts in kitchen
+Function show_room(room) prints room description
+Player can type "look" to see description
+Player can type "items" to see items in room
+
+You are in the kitchen.
+> look
+A small kitchen with a table and a stove.
+> items
+You see: key, apple
+> 

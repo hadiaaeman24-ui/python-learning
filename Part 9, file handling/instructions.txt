@@ -1,0 +1,90 @@
+FILE HANDLING (Saving and Loading)
+WHY FILE HANDLING?
+Right now, everything you make disappears when the program closes:
+Play game → Get key → Close program → Open again → Key is gone! 😢
+Play game → Get key → Save game → Close program → Open again → Load game → Still have key! 😊
+
+first one opening a FILE
+# Open a file for writing (creates file if it doesn't exist)
+file = open("savegame.txt", "w")
+# Do something with file
+# ALWAYS close the file when done
+file.close()
+Modes:
+Mode	What it does
+"w"	Write (overwrites existing content)
+"r"	Read (read existing content)
+"a"	Append (add to end of file)
+
+2. writing to a file 
+WRITING TO A FILE
+# Open file for writing
+file = open("savegame.txt", "w")
+# Write text
+file.write("Hello World!\n")
+file.write("Second line")
+# Close file
+file.close()
+\n means "new line" – moves to next line.
+
+3. READING FROM A FILE
+# Open file for reading
+file = open("savegame.txt", "r")
+# Read entire file as one string
+content = file.read()
+print(content)
+# Close file
+file.close()
+
+read by lines 
+file = open("savegame.txt", "r")
+
+for line in file:
+    print("Line:", line)
+
+file.close()
+
+
+
+. BETTER WAY: with (auto-closes file)
+Instead of remembering close(), use with:
+with open("savegame.txt", "w") as file:
+    file.write("Hello!\n")
+    file.write("This is saved!")
+# File auto-closes here
+
+# Reading
+with open("savegame.txt", "r") as file:
+    content = file.read()
+    print(content)
+# File auto-closes here
+
+
+SAVING GAME DATA
+You need to decide what to save. For a simple game:
+
+def save_game(player_name, health, inventory):
+    with open("save.txt", "w") as file:
+        file.write(player_name + "\n")
+        file.write(str(health) + "\n")
+        # Save inventory items, one per line
+        for item in inventory:
+            file.write(item + "\n")
+        file.write("END")  # marker for end of inventory
+
+LOADING GAME DATA
+def load_game():
+    with open("save.txt", "r") as file:
+        player_name = file.readline().strip()
+        health = int(file.readline().strip())
+        
+        inventory = []
+        for line in file:
+            item = line.strip()
+            if item == "END":
+                break
+            inventory.append(item)
+    
+    return player_name, health, inventory
+
+.strip() removes the newline character \n from the end.

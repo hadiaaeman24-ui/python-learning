@@ -1,0 +1,6 @@
+Greeting function
+A function called greet(name) that prints "Hello [name]!"
+Ask user for their name
+Call the function with their name
+What is your name? Sofia
+Hello Sofia

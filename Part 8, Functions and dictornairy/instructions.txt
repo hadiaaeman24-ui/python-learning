@@ -1,0 +1,125 @@
+functions
+WHAT IS A FUNCTION?
+A function is like creating your own command in Python.
+example 
+def say_hello():
+    print("Hello!")
+    print("Welcome!") # in python when you make functions you write def and functionname()
+Now you can use it anytime:
+say_hello()  # runs both print lines
+say_hello()  # runs both print lines again
+
+Think of it like: Creating a new button that does something you designed.
+WHY USE FUNCTIONS?
+Without functions: your code look like this not neat and not easy to understand 
+print("=== ESCAPE ROOM ===")
+print("You are in a dark room...")
+# 50 lines of game code
+print("=== ESCAPE ROOM ===")
+print("You are in a dark room...")
+# 50 more lines of game code
+# SO MUCH REPETITION!
+with functions you can make it neat and clean
+def show_title():
+    print("=== ESCAPE ROOM ===")
+def show_room():
+    print("You are in a dark room...")
+    print("There is a door and a table.")
+show_title()
+show_room()
+# Game code
+show_title()
+show_room()  # you can use the same think again and again just writing one line sentence
+
+there is also FUNCTION WITH PARAMETERS (Send data in)
+Parameters let you send information into a function.
+example 
+def greet(name):
+    print("Hello " + name + "!")
+greet("Anna")   # Hello Anna!
+greet("Leo")    # Hello Leo!
+
+you can also send multiple information Multiple parameters:
+def introduce(name, age):
+    print("My name is " + name + " and I am " + str(age))
+introduce("Emma", 14)   # My name is Emma and I am 14
+
+FUNCTION WITH RETURN (Send data back)
+Sometimes a function gives you back a result.
+examples 
+def add(a, b):
+    result = a + b
+    return result
+total = add(5, 3)
+print(total)  # 8
+another example
+ef check_age(age):
+    if age >= 18:
+        return "adult"
+    else:
+        return "child"
+status = check_age(15)
+print(status)  # child
+
+DICTIONARIES (Storing Pairs of Data)
+WHAT IS A DICTIONARY?
+A dictionary stores key-value pairs. Like a real dictionary: word (key) → definition (value).
+player = {
+    "name": "Anna",
+    "age": 14,
+    "health": 100
+}
+CREATING DICTIONARIES
+# Empty dictionary
+inventory = {}
+
+# Dictionary with data
+room = {
+    "name": "Kitchen",
+    "description": "A small room with a table",
+    "items": ["key", "knife"]
+}
+
+# Mix data types
+person = {
+    "name": "Leo",
+    "age": 12,
+    "has_key": True
+}
+how you can acess values of dictionary ACCESSING VALUES
+room = {
+    "name": "Kitchen",
+    "description": "A small room with a table"
+}
+print(room["name"])        # Kitchen
+print(room["description"]) # A small room with a table
+
+ADDING AND CHANGING VALUES
+room = {}
+# Add new key-value pair
+room["name"] = "Kitchen"
+room["description"] = "A small room"
+# Change existing value
+room["description"] = "A dark kitchen"
+print(room)  # {'name': 'Kitchen', 'description': 'A dark kitchen'}
+
+CHECKING IF A KEY EXISTS
+room = {"name": "Kitchen"}
+if "name" in room:
+    print("Room has a name")
+if "items" in room:
+    print(room["items"])  # This won't run
+else:
+    print("No items in this room")
+
+LOOOPING THROUGH DICTIONARIES
+player = {"name": "Anna", "age": 14, "health": 100}
+
+# Loop through keys
+for key in player:
+    print(key, ":", player[key])
+
+# Output:
+# name : Anna
+# age : 14
+# health : 100

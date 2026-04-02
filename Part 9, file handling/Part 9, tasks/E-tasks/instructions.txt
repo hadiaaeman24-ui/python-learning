@@ -1,0 +1,16 @@
+Save your name
+Make a program that:
+Asks for your name
+Saves it to a file called name.txt
+Reads it back and prints: "Saved name: [name]"
+example 
+What is your name? Emma
+Saving...
+Loading...
+Saved name: Emma
+
+Requirements:
+Use with open() for writing
+Use with open() for reading
+Write name to file
+Read name from file and print
