@@ -1,0 +1,12 @@
+Rules:
+🪨 Rock crushes ✂️ Scissors
+✂️ Scissors cuts 📄 Paper
+📄 Paper covers 🪨 Rock
+
+you vs computer
+i am going to use random to make computer choice 
+radom 0 to 4
+so if computer choose 1 it can be siccor 
+2 can be rock 
+and 3 can be papper 
+so you want to play try it..
