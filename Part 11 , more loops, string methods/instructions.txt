@@ -1,0 +1,97 @@
+Learn different types of loops and when to use each one.
+You already know while – repeats while a condition is true:
+Use while when: You don't know how many times you need to repeat.
+the second loop you can use it 
+for LOOP
+for loops through each item in a list or range:
+# Loop through a list
+colors = ["red", "blue", "green"]
+for color in colors:
+    print(color)
+
+# Output:
+# red
+# blue
+# green
+Think of it like: "For each item in this list, do something"
+
+. for WITH range()
+range(n) creates numbers from 0 to n-1:
+# Repeat 5 times (0, 1, 2, 3, 4)
+for i in range(5):
+    print("Loop number:", i)
+
+# Output:
+# Loop number: 0
+# Loop number: 1
+# Loop number: 2
+# Loop number: 3
+# Loop number: 4
+range(start, end) – from start to end-1:
+
+range(start, end, step) – with step size:
+for i in range(0, 10, 2):
+    print(i)
+
+# Output: 0 2 4 6 8
+
+you can also use nested loops
+for i in range(1, 4):
+    for j in range(1, 4):
+        print(i * j, end=" ")
+    print()  # new line
+
+# Output:
+# 1 2 3
+# 2 4 6
+# 3 6 9
+
+break and contunie in loop
+for i in range(10):
+    if i == 5:
+        break
+    print(i)
+# Output: 0 1 2 3 4
+break exit loop immidealtliy
+continue – skip to next iteration:
+for i in range(5):
+    if i == 2:
+        continue
+    print(i)
+# Output: 0 1 3 4
+
+STRING METHODS 
+String methods are built-in tools that let you change or check text.
+name = "anna"
+print(name.upper())  # ANNA
+.upper()	Make all uppercase	"hello".upper()	"HELLO"
+.lower()	Make all lowercase	"HELLO".lower()	"hello"
+.capitalize()	First letter uppercase	"hello".capitalize()	"Hello"
+.strip()	Remove spaces from ends	" hi ".strip()	"hi"
+.replace(a,b)	Replace a with b	"hi".replace("i","ello")	"hello"
+.find(x)	Find position of x	"hello".find("e")	1
+len()	Length of string	len("hello")	5
+
+# Check if word contains something
+sentence = "The key is under the mat"
+if "key" in sentence:
+    print("Found the word key!")
+# Find position
+position = sentence.find("key")
+print(position)  # 4 (starts at character 4)
+
+
+. JOINING LISTS INTO STRINGS
+inventory = ["key", "map", "torch"]
+text = ", ".join(inventory)
+print(text)  # "key, map, torch"
+
+
+MAKING USER INPUT FLEXIBLE
+Players might type "YES", "Yes", or "yes". Use .lower():
+python
+answer = input("Play again? ")
+if answer.lower() == "yes":
+    print("Playing again!")
+# Works for: "YES", "Yes", "yes", "yEs"
+

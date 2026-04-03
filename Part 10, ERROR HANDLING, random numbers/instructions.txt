@@ -1,0 +1,91 @@
+ERROR HANDLING
+Learn how to handle mistakes so your program doesn't crash when players do something unexpected.
+Right now, if a player types something wrong, your program crashes:
+age = int(input("Age: "))
+# Player types "hello" instead of a number
+# ERROR! ValueError: invalid literal for int()
+# Program crashes 😢
+The Solution: try/except
+try = try to do this
+except = if it fails, do this instead
+try:
+    age = int(input("How old are you? "))
+    print("You are", age)
+except:
+    print("That's not a number!")
+Now if user types "hello":
+Python tries to convert "hello" to a number
+It fails
+Instead of crashing, it goes to except
+Prints: "That's not a number!"
+Program stays alive! 
+Different errors have different names. Catch specific ones to handle them properly:  # it's okay if you dont find all error you just can try
+try:
+    age = int(input("Age: "))
+    result = 100 / age
+except ValueError:
+    # Wrong type of data
+    print("Please enter a number!")
+except ZeroDivisionError:
+    # Divided by zero
+    print("Age cannot be 0!")
+except:
+    # Any other error
+    print("Something went wrong!")
+
+Common errors:
+Error	When it happens
+ValueError	Wrong data type (e.g., text instead of number)
+ZeroDivisionError	Dividing by zero
+FileNotFoundError	Trying to open file that doesn't exist
+IndexError	List index out of range
+KeyError	Dictionary key doesn't exist
+so use can use USING ELSE AND FINALLY
+try:
+    age = int(input("Age: "))
+except ValueError:
+    print("Not a number!")
+else:
+    # Runs if NO error happened
+    print("Valid age:", age)
+finally:
+    # ALWAYS runs, error or not
+    print("Thanks for trying!")
+
+
+ RANDOM NUMBERS
+ Learn how to generate random numbers to add unpredictability to your games
+ Random functions are not automatically available. You need to import them:
+import random
+
+RANDOM INTEGERS
+import random
+# Random integer between 1 and 10 (inclusive)
+number = random.randint(1, 10)
+print(number)  # Could be 1, 2, 3, ..., 10
+# Random integer between 0 and 100
+score = random.randint(0, 100)
+
+ RANDOM CHOICE FROM LIST
+ import random
+items = ["key", "map", "torch", "potion"]
+random_item = random.choice(items)
+print(random_item)  # Randomly picks one
+# Random from multiple choices
+outcomes = ["win", "lose", "draw"]
+result = random.choice(outcomes)
+
+SHUFFLING LISTS
+import random
+cards = ["Ace", "King", "Queen", "Jack"]
+random.shuffle(cards)
+print(cards)  # Cards are now in random order
+
+RANDOM FLOAT (Decimal)
+import random
+# Random float between 0.0 and 1.0
+percent = random.random()
+print(percent)  # 0.0 to 1.0
+# Random float between 1.0 and 10.0
+value = random.uniform(1.0, 10.0)
+

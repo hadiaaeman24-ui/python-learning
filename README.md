@@ -25,4 +25,8 @@ i learned functions and dicitorinaries and their methid it was fun but looking l
 <br>
 Part 9 
 i learned file handling i cannot wait to make my first samlla little amazing project.
-
+<br>
+In part 10 you can learn eroor handling and radom function
+<br>
+Part 11 
+last part of learning i learned more loops and strings method now we will start making game

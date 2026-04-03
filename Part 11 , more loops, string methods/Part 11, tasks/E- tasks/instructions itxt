@@ -1,0 +1,4 @@
+For loop with range
+Uses a for loop with range()
+Prints numbers from 1 to 10
+Prints "Done!" at the end

@@ -1,0 +1,17 @@
+Dice roller with error handling
+Asks how many dice to roll (1-5)
+Uses try/except to ensure valid number
+Validates number is between 1 and 5
+Rolls that many dice (each 1-6)
+Shows results and total
+How many dice? (1-5): 3
+Rolling dice...
+Dice 1: 4
+Dice 2: 6
+Dice 3: 2
+Requirements:
+random.randint(1, 6) for each die
+Loop to roll multiple dice
+Try/except for number input
+Validate range (1-5)
+

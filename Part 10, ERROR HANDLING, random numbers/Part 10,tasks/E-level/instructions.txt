@@ -1,0 +1,15 @@
+Safe number input
+Make a program that:
+Creates a function get_number(prompt) that:
+Keeps asking until user enters a valid number
+Uses try/except to handle errors
+Returns the number
+Use it to ask for age and print it
+
+example
+Enter your age: hello
+Please enter a valid number!
+Enter your age: fifteen
+Please enter a valid number!
+Enter your age: 15
+You are 15 years old

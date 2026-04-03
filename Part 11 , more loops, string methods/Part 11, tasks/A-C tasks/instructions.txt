@@ -1,0 +1,26 @@
+ String cleaner
+Asks the user for their name
+Uses .strip() to remove extra spaces
+Uses .capitalize() to make first letter uppercase
+Prints a greeting
+
+What is your name?   anna   
+Hello Anna!
+
+
+
+Command parser with string methods
+Asks user for a command
+Converts command to lowercase (so "GO", "Go", "go" all work)
+Splits command into action and target
+Responds appropriately
+
+example 
+> TAKE KEY
+Taking key...
+Inventory: ['key']
+> use key
+Using key...
+> LOOK
+You see a door and a table
+
