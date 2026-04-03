@@ -30,3 +30,7 @@ In part 10 you can learn eroor handling and radom function
 <br>
 Part 11 
 last part of learning i learned more loops and strings method now we will start making game
+
+
+<br>
+Game = Rock Papper Sissors
